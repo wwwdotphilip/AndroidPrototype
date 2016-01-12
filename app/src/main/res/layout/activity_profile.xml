@@ -1,0 +1,133 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rlPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/ivUserPhoto"
+                android:layout_centerInParent="true"
+                android:src="@drawable/default_user"
+                android:clickable="true"
+                android:onClick="changePhoto"/>
+
+            <ProgressBar
+                android:id="@+id/pbPhotoProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/etName"
+            android:layout_below="@+id/rlPhoto"
+            android:inputType="text"
+            android:enabled="false"
+            android:layout_marginTop="5dp"
+            android:hint="Name" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/etAge"
+            android:layout_below="@+id/etName"
+            android:inputType="number"
+            android:enabled="false"
+            android:hint="Age" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etAge"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:enabled="false"
+                android:id="@+id/rbMale" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:enabled="false"
+                android:id="@+id/rbFemale" />
+
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/etEmail"
+            android:layout_below="@+id/rgGender"
+            android:inputType="text"
+            android:enabled="false"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:hint="Email" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/etUserName"
+            android:layout_below="@+id/etEmail"
+            android:inputType="text"
+            android:textSize="18sp"
+            android:enabled="false"
+            android:hint="Username" />
+
+        <Button
+            android:id="@+id/btnFollow"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Follow"
+            android:layout_below="@+id/etUserName"
+            android:onClick="follow"
+            android:background="@drawable/app_button"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Connect facebook"
+            android:background="@drawable/facebook_button"
+            android:id="@+id/btnConnectFb"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/btnFollow"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Connect twitter"
+            android:background="@drawable/twitter_button"
+            android:id="@+id/btnConnectTweet"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/btnConnectFb"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

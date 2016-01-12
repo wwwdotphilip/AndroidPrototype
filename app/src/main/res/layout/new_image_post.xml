@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Layout for the new post view-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/action_bar_bg">
+
+    <RelativeLayout
+        android:id="@+id/rlActionBars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp">
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/close_post_button" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/edit_caption_button" />
+
+            <Button
+                android:id="@+id/btnEditPhoto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/edit_photo_button" />
+
+            <Button
+                android:id="@+id/btnShowPicker"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@color/black"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnDone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/ic_action_accept"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDrawContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlActionBars"
+        android:layout_above="@+id/btnPost">
+
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llPickerHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/rlActionBars"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.larswerkman.holocolorpicker.ColorPicker
+            android:id="@+id/picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.larswerkman.holocolorpicker.SVBar
+            android:id="@+id/svbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etPost"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Tap to add caption"
+        android:gravity="center"
+        android:ellipsize="start"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@color/transparent_black"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/send_post_button" />
+
+</RelativeLayout>

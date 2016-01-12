@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="co.familyplay.androidprototype.activity.CreateGIFActivity">
+
+    <item
+        android:id="@+id/action_save"
+        android:title="Save"
+        android:visible="true"
+        android:icon="@drawable/ic_action_accept"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_add"
+        android:title="Add"
+        android:visible="false"
+        android:icon="@drawable/ic_action_new"
+        app:showAsAction="always" />
+</menu>

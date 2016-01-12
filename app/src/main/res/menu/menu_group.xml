@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="co.familyplay.androidprototype.activity.GroupActivity">
+    <item
+        android:id="@+id/action_image"
+        android:icon="@drawable/ic_action_cam"
+        android:title="Add photo"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_new"
+        android:icon="@drawable/ic_action_new"
+        android:title="New post"
+        app:showAsAction="always" />
+</menu>

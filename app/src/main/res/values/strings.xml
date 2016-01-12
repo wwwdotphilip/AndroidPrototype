@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Android Prototype</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">Sign Up</string>
+    <string name="title_activity_dash" />
+    <string name="parse_application_id"></string>
+    <string name="parse_client_key"></string>
+    <string name="title_activity_forgot_password">Forgot Password</string>
+    <string name="title_activity_view_post">Comments</string>
+
+    <string name="facebook_app_id"></string>
+    <string name="twitter_consumer_key"></string>
+    <string name="twitter_consumer_secret"></string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_group">Group</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_create_gif">Create GIF</string>
+</resources>

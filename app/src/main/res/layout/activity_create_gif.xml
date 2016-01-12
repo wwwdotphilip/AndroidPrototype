@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.familyplay.androidprototype.activity.CreateGIFActivity">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/btnRecord"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_action_cam"
+        android:text="Start" />
+
+    <ImageButton
+        android:id="@+id/btnRotateCamera"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:onClick="rotateCamera"
+        android:src="@drawable/ic_action_rotate"
+        android:text="Rotate camera" />
+
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/btnRotateCamera"
+        android:layout_toEndOf="@+id/btnRotateCamera"
+        android:layout_toLeftOf="@+id/btnRecord"
+        android:layout_toStartOf="@+id/btnRecord"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:background="@color/transparent_black"
+        android:text="Tap the camera to capture image."/>
+
+</RelativeLayout>

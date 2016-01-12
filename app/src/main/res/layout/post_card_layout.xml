@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Layout for the CardView-->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/card_view"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Username"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rlPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <co.familyplay.androidprototype.graphics.FillWidthImageView
+                    android:id="@+id/ivPhoto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/blank"
+                    android:scaleType="centerCrop" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gifPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/ivMapIcon"
+                android:layout_alignBottom="@+id/rlPhotos">
+                
+                <RadioGroup
+                    android:id="@+id/rgVote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbCute"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@null"
+                        android:background="@drawable/cute_radio" />
+
+                    <RadioButton
+                        android:id="@+id/rbAwesome"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@null"
+                        android:background="@drawable/awesome_radio" />
+
+                    <RadioButton
+                        android:id="@+id/rbYummy"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@null"
+                        android:background="@drawable/yummy_radio" />
+
+                    <RadioButton
+                        android:id="@+id/rbSexy"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:button="@null"
+                        android:background="@drawable/sexy_radio" />
+                </RadioGroup>
+
+                <ImageButton
+                    android:id="@+id/ibComment"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/comment_button"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivMapIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_map"
+                android:layout_toLeftOf="@+id/tvArea"
+                android:layout_toStartOf="@+id/tvArea" />
+
+            <TextView
+                android:id="@+id/tvArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/red"
+                android:maxLength="50"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hello world"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

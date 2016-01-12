@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="co.familyplay.androidprototype.activity.ProfileActivity">
+    <item
+        android:id="@+id/action_edit"
+        android:title="Edit profile"
+        android:icon="@drawable/ic_action_edit"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_done"
+        android:title="Save"
+        android:icon="@drawable/ic_action_accept"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_cancel"
+        android:title="Cancel"
+        android:icon="@drawable/ic_action_cancel"
+        android:visible="false"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:ellipsize="start"
+            android:layout_marginBottom="5dp"
+            android:hint="Username"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:ellipsize="start"
+            android:layout_marginBottom="5dp"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="login"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/app_button"
+            android:text="LOG IN"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:onClick="facebookLogin"
+            android:textColor="@color/white"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/facebook_button"
+            android:text="Log in with facebook"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:onClick="twitterLogin"
+            android:textColor="@color/white"
+            android:background="@drawable/twitter_button"
+            android:text="Log in with twitter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/blue"
+            android:clickable="true"
+            android:onClick="forgotPassword"
+            android:text="Forgot password?"/>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:onClick="signUp"/>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Layout for the new post view-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/action_bar_bg">
+
+    <RelativeLayout
+        android:id="@+id/rlActionBars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp">
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/close_post_button"/>
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/edit_caption_button"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etPost"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Tap to add caption"
+        android:gravity="center"
+        android:ellipsize="start"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@color/transparent_black"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/send_post_button"/>
+
+</RelativeLayout>

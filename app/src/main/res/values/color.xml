@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="red">#FF0000</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="teal">#008080</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="navy">#000080</color>
+    <color name="black">#000000</color>
+    <color name="label">#006B54</color>
+    <color name="clickable">#0D4F8B</color>
+    <color name="buttonPressed">#607d36</color>
+    <color name="buttonReleased">#8BB155</color>
+    <color name="actionbar_background_color">#607d36</color>
+    <color name="facebook_release">#3b5998</color>
+    <color name="facebook_pressed">#ff697698</color>
+    <color name="twitter_release">#00aced</color>
+    <color name="twitter_pressed">#9700aced</color>
+    <color name="app_release">#ff217fd7</color>
+    <color name="app_pressed">#64B5F6</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="tab_highlight">#ff9ecfbf</color>
+
+    <color name="action_bar_bg">#ff217fd7</color>
+    <color name="status_bar_bg">#ff1e4a93</color>
+    <color name="tab_bg">#64B5F6</color>
+    <color name="tab_underline">#0D47A1</color>
+    <color name="transparent_black">#99000000</color>
+
+</resources>
